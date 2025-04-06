@@ -1,10 +1,19 @@
-<div *ngFor="let artist of artists">
-  <h2>{{ artist.name }}</h2>
-  <p>{{ artist.bio }}</p>
-  <img [src]="artist.image_url" alt="{{ artist.name }}" width="200" />
-  <ul>
-    <li *ngFor="let album of artist.albums">
-      <strong>{{ album.title }}</strong> ({{ album.release_date }}) - Genre: {{ album.genre }}
-    </li>
-  </ul>
+<div class="container mt-4">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col" *ngFor="let artist of artists">
+      <div class="card h-100">
+        <img [src]="artist.image_url" class="card-img-top" [alt]="artist.name">
+        <div class="card-body">
+          <h5 class="card-title">{{ artist.name }}</h5>
+          <p class="card-text">{{ artist.bio }}</p>
+          <h6>Albums:</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let album of artist.albums">
+              <strong>{{ album.title }}</strong> ({{ album.release_date }}) - {{ album.genre }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
