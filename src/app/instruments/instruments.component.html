@@ -1,0 +1,30 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Price</th>
+      <th>Stock</th>
+      <th>Description</th>
+      <th>Manufacturer</th>
+      <th>Rating</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let instrument of instruments">
+      <td>{{ instrument.id }}</td>
+      <td>{{ instrument.name }}</td>
+      <td>{{ instrument.category }}</td>
+      <td>{{ instrument.price | currency }}</td>
+      <td>{{ instrument.stock }}</td>
+      <td>{{ instrument.description }}</td>
+      <td>{{ instrument.manufacturer }}</td>
+      <td>{{ instrument.rating }}</td>
+      <td>
+        <img [src]="instrument.image_url" alt="{{ instrument.name }}" width="100" />
+      </td>
+    </tr>
+  </tbody>
+</table>
