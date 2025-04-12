@@ -1,0 +1,47 @@
+.card-title {
+    font-size: 1.5rem; /* Moderate artist name size */
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-size: 1.1rem; /* Moderate bio text size */
+    line-height: 1.6;
+  }
+  
+  h6 {
+    font-size: 1.2rem; /* Moderate album section title size */
+    font-weight: 500;
+  }
+  
+  .list-group-item {
+    font-size: 1.1rem; /* Moderate album item text size */
+  }
+  
+  .card-body {
+    padding: 1.5rem; /* Add more padding for spacing */
+  }
+  
+  ul.list-group li {
+    font-size: 1rem; /* Adjust album name size */
+  }
+  
+  ul.list-group li strong {
+    font-weight: 600; /* Keep album name bold */
+  }
+  
+  @media (max-width: 576px) {
+    /* Adjustments for mobile screens */
+    .card-title {
+      font-size: 1.4rem; /* Slightly smaller for mobile */
+    }
+    .card-text {
+      font-size: 1rem; /* Slightly smaller for mobile */
+    }
+    h6 {
+      font-size: 1.1rem; /* Slightly smaller album section title for mobile */
+    }
+    .list-group-item {
+      font-size: 1rem; /* Slightly smaller for mobile */
+    }
+  }
+  

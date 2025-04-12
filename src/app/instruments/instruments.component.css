@@ -1,0 +1,31 @@
+.card-title {
+    font-size: 1.5rem; /* Increase title size */
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Increase description size */
+    line-height: 1.6;
+  }
+  
+  .list-group-item {
+    font-size: 1.1rem; /* Increase list item text size */
+  }
+  
+  .card-body {
+    padding: 1.5rem; /* Add more padding to give more space around the text */
+  }
+  
+  @media (max-width: 576px) {
+    /* Make adjustments for mobile screens */
+    .card-title {
+      font-size: 1.25rem; /* Slightly smaller for mobile */
+    }
+    .card-text {
+      font-size: 0.95rem; /* Slightly smaller for mobile */
+    }
+    .list-group-item {
+      font-size: 1rem; /* Slightly smaller for mobile */
+    }
+  }
+  
